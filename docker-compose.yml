@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  vpn:
+    image: mberner/strongswan:v2
+    container_name: vpn
+    volumes:
+     - "./conf/ipsec.conf:/etc/ipsec.conf"
+     - "./conf/ipsec.secrets:/etc/ipsec.secrets"
+     - "./conf/sysctl.conf:/etc/sysctl.conf"
+    network_mode: host
+    privileged: true
