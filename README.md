@@ -1,0 +1,1 @@
+Strongswam in Docker for testing AWS Site-to-Site VPN Connection. Click [here](https://kjanshair.github.io/2019/06/08/setting-up-aws-managed-s2s-vpn-vpg-1-2/) to follow along.

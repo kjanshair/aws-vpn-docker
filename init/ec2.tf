@@ -6,7 +6,7 @@ module "aws-vpn-docker-ec2" {
   instance_count              = 1
   name                        = "AWS VPN - Docker"
   instance_type               = var.ec2-instance-type
-  key_name                    = "id_rsa"
+  key_name                    = var.key-name
   monitoring                  = false
   vpc_security_group_ids      = [module.aws-vpn-docker-security-group.this_security_group_id]
   subnet_id                   = module.aws-vpn-docker-vpc.private_subnets[0]

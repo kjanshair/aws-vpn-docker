@@ -16,3 +16,4 @@ variable "instance_ami" { type = string }
 
 variable "ec2-instance-type" { type = string }
 
+variable "key-name" { type = string }
